@@ -13,9 +13,10 @@ public class MrCoxallStack {
 	private static final ArrayList<Integer> stackArray = new ArrayList<Integer>();
 	private static String update = "";
 	
-	public void print() {
+	public String print() {
 		//prints entire stack
-		System.out.println("\nStack: " + stackArray);
+		update = "\nStack: " + stackArray;
+		return update;
 	}
 	
 	public String push(int value) {
