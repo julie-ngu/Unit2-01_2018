@@ -3,19 +3,25 @@
  * Created by: Julie Nguyen
  * Created on: Oct 2018
  * Created for: ICS4U
- * comment
+ * MrCoxallStack class
  *
  ****************************************************************************/
 
 import java.util.ArrayList;
 
-public class Stack {
+public class MrCoxallStack {
 	private static final ArrayList<Integer> stackArray = new ArrayList<Integer>();
-	//int top;
-		
-	public void push(int value) {
+	private static String update = "";
+	
+	public void print() {
+		//prints entire stack
+		System.out.println("\nStack: " + stackArray);
+	}
+	
+	public String push(int value) {
 		//adds value to stack
 		stackArray.add(value);
-		//System.out.print(value);
+		update = "Value was added.";
+		return update;
 	}
 }
