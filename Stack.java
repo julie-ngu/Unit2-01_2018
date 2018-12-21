@@ -9,17 +9,17 @@
 
 import java.util.Scanner;
 
-public class Main {
+public class Stack {
 	public static void main(String[] args) {
 		//gets input from user for stack
-		Stack userStack = new Stack();
+		MrCoxallStack userStack = new MrCoxallStack();
 		
 		System.out.print("Enter a number:\n");
 		
 		Scanner userInput = new Scanner(System.in);
 		int userNum = userInput.nextInt();
 		
-		userStack.push(userNum);
-		//System.out.println(userNum);	
+		System.out.println(userStack.push(userNum));
+		userStack.print();
 	}
 }
