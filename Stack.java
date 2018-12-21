@@ -19,7 +19,6 @@ public class Stack {
 		Scanner userInput = new Scanner(System.in);
 		int userNum = userInput.nextInt();
 		
-		System.out.println(userStack.push(userNum));
-		userStack.print();
+		System.out.println(userStack.push(userNum) + userStack.print());
 	}
 }
